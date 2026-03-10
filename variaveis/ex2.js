@@ -10,10 +10,11 @@ Depois, imprima no console:
 
 O resultado da multiplicação é ___.*/
 
-var n1 = 7
-
-var n2 = 35
+function v2(n1, n2) {
 
 var mult = n1 * n2 
 
 console.log(`O resultado da multiplicação é ${mult}`)
+}
+
+export {v2}

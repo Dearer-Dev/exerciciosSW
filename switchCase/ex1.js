@@ -1,5 +1,7 @@
 //descobir que dia é hoje
 
+function swt() {
+    
 var agora = new Date()
 var diaS = agora.getDay()
 
@@ -30,5 +32,8 @@ switch(diaS) {
         console.log(`[ERRO] Dia inválido.`)
     break     
 }
+}
+
+export {swt}
 
 //SwitchCase

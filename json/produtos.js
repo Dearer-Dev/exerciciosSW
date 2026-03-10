@@ -1,3 +1,6 @@
+
+function produtos() {
+     
 const produtos = [
     {id_produto: 0,
      nomeProduto:"Sabão em pó",
@@ -17,3 +20,6 @@ const produtos = [
 } ]
 
 console.log(produtos)
+}
+
+export {produtos}

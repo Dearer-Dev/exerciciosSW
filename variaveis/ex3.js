@@ -12,12 +12,11 @@ Depois, mostre no console:
 
 Você comprou ___ unidades de ___ e o total foi R$ ___. */
 
-const produto = "bic mac"
-
-const  precounitario = 20
-
-const quantidadeComprada = 5
+function v3(produto, precounitario, quantidadeComprada) {
 
 const precototal = precounitario * quantidadeComprada
 
 console.log(`Você comprou ${quantidadeComprada} unidades de ${produto} e o total foi R$ ${precototal}`)
+}
+
+export {v3}

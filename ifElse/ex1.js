@@ -1,9 +1,10 @@
 //Verificar se o usuário é maior de idade
-
-let idade = 17;
-
+function if1(idade) {
+    
 let resultado = idade >= 18 ? "Maior de idade" : "Menor de idade";
 
 console.log(resultado);
+}
 
+export {if1}
 //if ternário
