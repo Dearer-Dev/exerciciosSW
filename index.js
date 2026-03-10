@@ -1,5 +1,9 @@
 //Importações
 
+import express from 'express'
+
+const app = express()
+
 //if Else
 import { if1 } from "./ifElse/ex1.js";
 import { if2 } from "./ifElse/ex2.js";
@@ -40,7 +44,34 @@ import { opr6 } from "./operadoresRelacionais/ex6.js";
 //Switch Case
 import { swt } from "./switchCase/ex1.js";
 
-//Exercicios
+//Exercicios IfElse
+
+app.get('/if1', (req, res) => {
+    let resp = if1(18)
+    res.send(`Teste: ${resp}`)
+  })
+
+  app.get('/if2', (req, res) => {
+    let resp = if2(18)
+    res.send(`${resp}`)
+  })
+
+  app.get('/if3', (req, res) => {
+    let resp = if3("Brasil")
+    res.send(` ${resp}`)
+  })
+
+  //Exercicios json
+
+  
+
+
+
+
+
+app.listen(3000, () => {
+    console.log('Server is running on http://localhost:3000')
+  })
 
 
 

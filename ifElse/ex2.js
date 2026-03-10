@@ -2,7 +2,8 @@
 function if2(n) {
 
 if(n > 10){
-    console.log("Seu número é maior que 10, seu número: " + n)
+    
+    return(`Seu numero é maior que 10, seu numero é: ${n}`)
 }
 }
 

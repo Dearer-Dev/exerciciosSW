@@ -1,9 +1,9 @@
 //Verificar se o usuário é maior de idade
 function if1(idade) {
     
-let resultado = idade >= 18 ? "Maior de idade" : "Menor de idade";
+let resultado = idade >= 18 ? "Você é Maior de idade" : "Você é Menor de idade";
 
-console.log(resultado);
+return(resultado);
 }
 
 export {if1}
