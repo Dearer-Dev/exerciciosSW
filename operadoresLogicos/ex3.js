@@ -7,9 +7,10 @@ if (usuarioLogado === true ){
 }
 
 if(!acesso){
-    console.log(`Você não está logado, ACESSO NEGADO`)
-}else {console.log(`Você está logado, ACESSO LIBERADO`)}
-
+    return(`Você não está logado, ACESSO NEGADO`)
+}else {
+    return(`Você está logado, ACESSO LIBERADO`)
+}
 }
 
 export {opl3}

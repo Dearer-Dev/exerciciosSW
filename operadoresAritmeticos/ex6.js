@@ -10,7 +10,7 @@ for (let i = 0; i <= n; i++) {
     }
 }
 
-console.log(`A raiz quadrada de ${n} é ${raiz}`)
+return (`A raiz quadrada de ${n} é ${raiz}`)
 }
 export {opa6}
 //raiz

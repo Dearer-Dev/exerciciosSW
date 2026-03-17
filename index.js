@@ -107,33 +107,52 @@ app.get('/if1', (req, res) => {
     app.get('/opa1', (req, res) =>{
       let resp = opa1(1, 2)
       res.send(resp)
-    
-
   })
 
     app.get('/opa2', (req, res) =>{
       let resp = opa2(100)
       res.send(resp)
-    
-
   })
 
     app.get('/opa3', (req, res) =>{
       let resp = opa3(100, 200)
       res.send(resp)
-    
-
   })
 
     app.get('/opa4', (req, res) =>{
-    
-
+      let resp = opa4(1000, 4)
+      res.send(resp)
   })
 
     app.get('/opa5', (req, res) =>{
-    
-
+      let resp = opa5(2)
+      res.send(resp)
   })
+    app.get('/opa6', (req, res) =>{
+      let resp = opa6(4)
+      res.send(resp)
+  })
+    app.get('/opa7', (req, res) =>{
+      let resp = opa7(55)
+      res.send(resp)
+  })
+
+  //Exerciciosa de operadores lógicos
+
+      app.get('/opl1', (req, res) =>{
+      let resp = opl1(18, "tem convite")
+      res.send(resp)
+  })
+    app.get('/opl2', (req, res) =>{
+      let resp = opl2(8, 80)
+      res.send(resp)
+  })
+    app.get('/opl3', (req, res) =>{
+      let resp = opl3(55)
+      res.send(resp)
+  })
+
+
 
   
 

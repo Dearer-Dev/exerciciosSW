@@ -3,7 +3,7 @@
 function opa7(n) {
 
 let resto = n % 2
-console.log(`O resto é ${resto}`)
+return(`O resto da divisão do ${n} por 2 é ${resto}`)
 }
 
 export {opa7}

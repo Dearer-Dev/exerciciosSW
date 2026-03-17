@@ -3,9 +3,9 @@
 function opr1(idade1, idade2) {
 
 if(idade2 > idade1){
-    console.log(`A idade 2 é maior que a idade 1`)
+    return(`A idade 2 (${idade2}) é maior que a idade 1 (${idade1})`)
 }else {
-    console.log(`A idade 2 é menor que a idade 1`)
+    return(`A idade 2 (${idade2}) é menor que a idade 1 (${idade1})`)
 }
 }
 export {opr1}

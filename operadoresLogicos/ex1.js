@@ -3,11 +3,11 @@
 function opl1(idade, convite) {
 
 
-if(idade >=18 && convite === true){
-    console.log(`Pode entrar no evento!`)
-} else{
-    console.log(`Não pode entrar no evento :(`)
-}
+if (idade >= 18 && convite === "tem convite") {
+        return `Seja bem-vindo! Você tem ${idade} anos e seu convite é válido. Pode entrar!`;
+    } else {
+        return `Desculpe, não foi possível liberar sua entrada. Verifique sua idade (${idade}) ou a situação do seu convite (${convite}).`;
+    }
 }
 export {opl1}
 // Operador Lógico E (&&)

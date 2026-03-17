@@ -2,11 +2,9 @@
 
 function opr2(vel) {
 
-console.log(`A velocidade do seu carro é ${vel}Km/h`)
-
 if (vel < 60){
-    console.log('Você está andando na velocidade da via, continue assim!')
-}else (console.log('Você passou do limite da via, MULTADO!')) 
+    return(`A velocidade do seu carro é de ${vel}Km/h. Você está andando na velocidade da via, continue assim!`)
+}else return(`A velocidade do seu carro é ${vel}Km/h. Você passou do limite da via, MULTADO!`)
 }
 export {opr2}
 //Menor que (<)

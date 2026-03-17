@@ -3,7 +3,7 @@ function opa4(contaRestaurante, quantidadeDePessoas) {
 
 let cadaUmDevePagar = contaRestaurante / quantidadeDePessoas
 
-console.log(`A conta total deu:  ${contaRestaurante}, total de pessoas ${quantidadeDePessoas}, quanto fica para cada ${cadaUmDevePagar}R$`)
+return(`A conta total deu:  ${contaRestaurante}R$, total de pessoas ${quantidadeDePessoas}, quanto fica para cada ${cadaUmDevePagar}R$`)
 }
 
 export {opa4}

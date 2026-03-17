@@ -3,7 +3,7 @@ function opa5(n) {
     
 let quadrado = n**2
 
-console.log(`Número escolhido ${n}, quadrado dele ${quadrado}`)
+return(`Número escolhido ${n}, o quadrado dele é ${quadrado}`)
 }
 
 export {opa5}

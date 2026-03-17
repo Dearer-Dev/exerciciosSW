@@ -3,9 +3,9 @@
 function opl2(nota, freq) {
 
 if(nota >= 7 || freq >= 75){
-    console.log(`Passou de ano, APROVADO!`)
+    return(`Passou de ano, usa nota final é ${nota} e sua frequencia é de ${freq}%, APROVADO!`)
 } else{
-    console.log(`Não passou de ano, REPROVADO!`)
+    return(`Não passou de ano, REPROVADO!`)
 }
 }
 

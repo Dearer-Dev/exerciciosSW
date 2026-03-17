@@ -3,8 +3,7 @@
 function opr3(nota) {
 
 if(nota >= 7) {
-    console.log(`Parabéns você está na média, PASSOU!`)
-} else {console.log('Não passou, ESTUDE MAIS!')}
-}
+    return(`Parabéns, sua nota é ${nota}, você está na média, PASSOU!`)
+} else { return(`Não passou, sua nota é ${nota}, ESTUDE MAIS!)}
 export {opr3}
 //Maior ou igual (>=)
