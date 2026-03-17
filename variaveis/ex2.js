@@ -14,7 +14,7 @@ function v2(n1, n2) {
 
 var mult = n1 * n2 
 
-console.log(`O resultado da multiplicação é ${mult}`)
+return(`O resultado da multiplicação é ${mult}`)
 }
 
 export {v2}

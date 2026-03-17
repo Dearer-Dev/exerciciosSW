@@ -4,13 +4,11 @@ function ve1(posicao) {
     
 const numeros = [5,10,15,20,25]
 
-let posicao = numeros.indexOf(5)
-
 if (posicao !== -1){
-    console.log(`Numero encontrado posição: ${posicao}`) 
+    return(`Numero encontrado posição: ${posicao}`) 
 }
 else{
-    console.log(`Numero não encontrado`)
+    return(`Numero não exixtente no vetor`)
 }
 }
 export {ve1}

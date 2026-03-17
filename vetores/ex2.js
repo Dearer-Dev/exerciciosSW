@@ -10,7 +10,7 @@ for (let i = 0; i < numero.length; i++){
     soma += numero[i]
 }
 
-console.log("soma:" + soma)
+return("soma dos numeros do vetor:" + soma)
 }
 
 export {ve2}

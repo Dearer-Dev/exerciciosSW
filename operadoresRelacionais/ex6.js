@@ -3,8 +3,10 @@
 function opr6(senhaCadastrada, senhaDigitada) {
 
 if (senhaDigitada !== senhaCadastrada ){
-    console.log`Senha errada, tente novamente.`
-} else {`Login realizado com sucesso`}
+    return (`Senha errada, tente novamente.`)
+} else {
+    return(`Login realizado com sucesso`)
+    }
 }
 
 export {opr6}

@@ -16,7 +16,7 @@ function v3(produto, precounitario, quantidadeComprada) {
 
 const precototal = precounitario * quantidadeComprada
 
-console.log(`Você comprou ${quantidadeComprada} unidades de ${produto} e o total foi R$ ${precototal}`)
+return(`Você comprou ${quantidadeComprada} unidades de ${produto} e o total foi R$ ${precototal}`)
 }
 
 export {v3}

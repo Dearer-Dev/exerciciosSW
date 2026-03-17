@@ -5,32 +5,24 @@ function swt() {
 var agora = new Date()
 var diaS = agora.getDay()
 
-
 switch(diaS) {
     case 0:
-        console.log(`Hoje é Domingo `)
-    break 
+        return(`Hoje é Domingo `)
     case 1:
-        console.log(`Hoje é Segunda`)
-    break 
+        return(`Hoje é Segunda`)
     case 2:
-        console.log(`Hoje é Terça`)
-    break 
+        return(`Hoje é Terça`)
     case 3:
-        console.log(`Hoje é Quarta`)
-    break 
+        return(`Hoje é Quarta`)
     case 4:
-        console.log(`Hoje é Quinta`)
-    break 
+        return(`Hoje é Quinta`)
     case 5:
-        console.log(`Hoje é Sexta`)
-    break 
+        return(`Hoje é Sexta`)
     case 6:
-        console.log(`Hoje é Sábado`)
+        return(`Hoje é Sábado`)
     break
     default:
-        console.log(`[ERRO] Dia inválido.`)
-    break     
+        return(`[ERRO] Dia inválido.`)    
 }
 }
 

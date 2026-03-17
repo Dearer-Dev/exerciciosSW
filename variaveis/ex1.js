@@ -12,7 +12,7 @@ Meu nome é ___, tenho ___ anos e moro em ___.
  */
 
 function v1(nome, idade, cidade){
-console.log(`Meu nome é ${nome}, eu tenho ${idade} anos e moro em ${cidade}`)
+return(`Meu nome é ${nome}, eu tenho ${idade} anos e moro em ${cidade}`)
 }
 
 export {v1}

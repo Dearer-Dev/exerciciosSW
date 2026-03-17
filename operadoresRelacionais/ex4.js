@@ -3,9 +3,9 @@
 function opr4(temperatura) {
 
 if(temperatura < 18){
-    console.log(`Hoje está ${temperatura}° Graus, está frio hoje`)
+    return(`Hoje está ${temperatura}° Graus, está frio hoje`)
 }else {
-    console.log(`Hoje está ${temperatura}° Graus, está calor hoje`)
+    return(`Hoje está ${temperatura}° Graus, está calor hoje`)
 }
 }
 export {opr4}
