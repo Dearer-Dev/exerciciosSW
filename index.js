@@ -47,21 +47,93 @@ import { swt } from "./switchCase/ex1.js";
 //Exercicios IfElse
 
 app.get('/if1', (req, res) => {
-    let resp = if1(18)
-    res.send(`Teste: ${resp}`)
+    let idade = 17
+    let resp = if1(idade)
+    res.send(`${resp}, sua idade é ${idade}`)
   })
 
   app.get('/if2', (req, res) => {
-    let resp = if2(18)
+    let n = 11
+    let resp = if2(n)
     res.send(`${resp}`)
   })
 
   app.get('/if3', (req, res) => {
-    let resp = if3("Brasil")
+    let pais = "Brasil"
+    let resp = if3(pais)
     res.send(` ${resp}`)
   })
 
-  //Exercicios json
+  //Exercicio json
+
+  app.get('/json', (req, res) =>{
+    res.json(produtos())
+  })
+
+  //Exercicios de laço
+
+  app.get('/laco1', (req, res) =>{
+    let resp = laco1()
+    res.send(`Contando até 10... ${resp}`)
+  })
+
+  app.get('/laco1', (req, res) =>{
+    let resp = laco1()
+    res.send(`Contando até 10... ${resp}`)
+  })
+
+  app.get('/laco2', (req, res) =>{
+    let resp = laco2()
+    res.send(`Números pares de 2 a 20... ${resp}`)
+  })
+
+  app.get('/laco3', (req, res) =>{
+    let resp = laco3()
+    res.send(`Números divisiveis por 3 de 1 a 50... ${resp}`)
+  })
+
+  app.get('/laco4', (req, res) =>{
+    let resp = laco4()
+    res.send(`${resp}`)
+  })
+
+  app.get('/laco5', (req, res) =>{
+    let resp = laco5()
+    res.send(`Exibir nomes com o map... ${resp}`)
+  })
+
+  //Exercicios de operadores Aritméticos
+
+    app.get('/opa1', (req, res) =>{
+      let resp = opa1(1, 2)
+      res.send(resp)
+    
+
+  })
+
+    app.get('/opa2', (req, res) =>{
+      let resp = opa2(100)
+      res.send(resp)
+    
+
+  })
+
+    app.get('/opa3', (req, res) =>{
+      let resp = opa3(100, 200)
+      res.send(resp)
+    
+
+  })
+
+    app.get('/opa4', (req, res) =>{
+    
+
+  })
+
+    app.get('/opa5', (req, res) =>{
+    
+
+  })
 
   
 

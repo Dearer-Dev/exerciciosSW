@@ -19,7 +19,7 @@ const produtos = [
      precoProduto: 5.50
 } ]
 
-console.log(produtos)
+return(produtos)
 }
 
 export {produtos}

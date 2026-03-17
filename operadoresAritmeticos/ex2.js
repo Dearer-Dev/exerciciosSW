@@ -1,9 +1,10 @@
-//Crie um programa que: declare um valor representando o preço de um produto, declare outro valor representando um desconto, calcule o valor final após a subtração, mostre o resultado
-function opa2(precoProduto, desconto) {
+//Crie um programa que: declare um valor representando o preço de um produto, e calcule o valor final após o calculo de desconto de 20%, mostre o resultado
+function opa2(precoProduto) {
+let desconto = precoProduto * 0.2
     
 let resultado = precoProduto - desconto
 
-console.log(`O preço do produto é ${precoProduto}, com desconto fica ${resultado}.`)
+return(`O preço do produto é ${precoProduto}, com desconto fica ${resultado}.`)
 }
 
 export {opa2}

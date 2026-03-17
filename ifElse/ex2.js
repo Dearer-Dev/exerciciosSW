@@ -4,6 +4,8 @@ function if2(n) {
 if(n > 10){
     
     return(`Seu numero é maior que 10, seu numero é: ${n}`)
+} else{
+    return(`Seu número é menor que 10, seu numero é: ${n}`)
 }
 }
 
