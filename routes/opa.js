@@ -13,12 +13,15 @@ import { opa7 } from "../operadoresAritmeticos/ex7.js";
  //Exercicios de operadores Aritméticos
 
  router_opa.get('/opa1', (req, res) =>{
-    let resp = opa1(1, 2)
-    res.send(resp)
+  const n1 = Number(req.query.n1)
+  const n2 = Number(req.query.n2)
+    let resp = opa1(n1, n2)
+    res.send(resp.toString())
 })
 
   router_opa.get('/opa2', (req, res) =>{
-    let resp = opa2(100)
+    let preco = 100
+    let resp = opa2(preco)
     res.send(resp)
 })
 

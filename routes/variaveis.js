@@ -6,17 +6,20 @@ import {v2} from '../variaveis/ex2.js'
 import {v3} from '../variaveis/ex3.js'
 
 router_variaveis.get('/v1', (req, res) =>{
-    let resp = v1("André", 17, "São Paulo")
+   const {nome, idade,cidade} = req.query
+   let resp = v1(nome, idade, cidade)
     res.send(resp)
 })
 
 router_variaveis.get('/v2', (req, res) =>{
-    let resp = v2(2, 2)
+    const {n1, n2} = req.query
+    let resp = v2(n1, n2)
     res.send(resp)
 })
 
 router_variaveis.get('/v3', (req, res) =>{
-    let resp = v3("Vidro temperado", 32.99, 100)
+    const {produto, precounitario, quantidadeComprada} = req.query
+    let resp = v3(produto, precounitario, quantidadeComprada)
     res.send(resp)
 })
 
