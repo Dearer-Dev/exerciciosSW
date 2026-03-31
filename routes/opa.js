@@ -12,39 +12,43 @@ import { opa7 } from "../operadoresAritmeticos/ex7.js";
 
  //Exercicios de operadores Aritméticos
 
- router_opa.get('/opa1', (req, res) =>{
-  const n1 = Number(req.query.n1)
-  const n2 = Number(req.query.n2)
+ router_opa.post('/opa1', (req, res) =>{
+  const {n1, n2} = req.body
     let resp = opa1(n1, n2)
-    res.send(resp.toString())
+    res.send(resp)
 })
 
-  router_opa.get('/opa2', (req, res) =>{
-    let preco = 100
+  router_opa.post('/opa2', (req, res) =>{
+    let {preco} = req.body
     let resp = opa2(preco)
     res.send(resp)
 })
 
-  router_opa.get('/opa3', (req, res) =>{
-    let resp = opa3(100, 200)
+  router_opa.post('/opa3', (req, res) =>{
+    const {largura, altura} = req.body
+    let resp = opa3(largura, altura)
     res.send(resp)
 })
 
-  router_opa.get('/opa4', (req, res) =>{
-    let resp = opa4(1000, 4)
+  router_opa.post('/opa4', (req, res) =>{
+    const {contaRestaurante, quantidadeDePessoas} = req.body
+    let resp = opa4(contaRestaurante, quantidadeDePessoas)
     res.send(resp)
 })
 
-  router_opa.get('/opa5', (req, res) =>{
-    let resp = opa5(2)
+  router_opa.post('/opa5', (req, res) =>{
+    const {n} = req.body
+    let resp = opa5(n)
     res.send(resp)
 })
-  router_opa.get('/opa6', (req, res) =>{
-    let resp = opa6(4)
+  router_opa.post('/opa6', (req, res) =>{
+    const {n} = req.body
+    let resp = opa6(n)
     res.send(resp)
 })
-  router_opa.get('/opa7', (req, res) =>{
-    let resp = opa7(55)
+  router_opa.post('/opa7', (req, res) =>{
+    const {n} = req.body
+    let resp = opa7(n)
     res.send(resp)
 })
 

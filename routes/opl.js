@@ -8,16 +8,19 @@ import { opl3 } from "../operadoresLogicos/ex3.js";
 
   //Exerciciosa de operadores lógicos
 
-  router_opl.get('/opl1', (req, res) =>{
-    let resp = opl1(18, "tem convite")
-    res.send(resp)
+  router_opl.post('/opl1', (req, res) =>{
+    const {idade, convite} = req.body
+    let resp = opl1(idade, convite)
+    res.json(resp)
 })
-  router_opl.get('/opl2', (req, res) =>{
-    let resp = opl2(8, 80)
-    res.send(resp)
+  router_opl.post('/opl2', (req, res) =>{
+    const {nota, freq} = req.body
+    let resp = opl2(nota, freq)
+    res.json(resp)
 })
-  router_opl.get('/opl3', (req, res) =>{
-    let resp = opl3(55)
+  router_opl.post('/opl3', (req, res) =>{
+    const{usuarioLogado} = req.body
+    let resp = opl3(usuarioLogado)
     res.send(resp)
 })
 

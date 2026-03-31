@@ -11,31 +11,38 @@ import { opr6 } from "../operadoresRelacionais/ex6.js";
 
     //Exerciciosa de operadores relacionais
 
-    router_opr.get('/opr1', (req, res) =>{
-        let resp = opr1(18, 15)
+    router_opr.post('/opr1', (req, res) =>{
+        const {idade1, idade2} = req.body
+        let resp = opr1(idade1, idade2)
         res.send(resp)
     })
-      router_opr.get('/opr2', (req, res) =>{
-        let resp = opr2(50)
+      router_opr.post('/opr2', (req, res) =>{
+        const vel = req.body.vel
+        let resp = opr2(vel)
         res.send(resp)
     })
-      router_opr.get('/opr3', (req, res) =>{
-        let resp = opr3(55)
+      router_opr.post('/opr3', (req, res) =>{
+        const nota = req.body.nota
+        let resp = opr3(nota)
         res.send(resp)
     })
-    router_opr.get('/opr4', (req, res) =>{
-      let resp = opr4(18, 15)
+    router_opr.post('/opr4', (req, res) =>{
+      let temperatura = req.body.temperatura
+      let resp = opr4(temperatura)
       res.send(resp)
    })
-    router_opr.get('/opr5', (req, res) =>{
-      let resp = opr5(8, 80)
+    router_opr.post('/opr5', (req, res) =>{
+      let v1 = req.body.v1
+      let v2 = req.body.v2
+      let resp = opr5(v1, v2)
       res.send(resp)
    })
-    router_opr.get('/opr6', (req, res) =>{
-      let resp = opr6(55)
+    router_opr.post('/opr6', (req, res) =>{
+      let senhaDigitada = req.body.senhaDigitada
+      let resp = opr6(senhaDigitada)
       res.send(resp)
    })
-   router_opr.get('/opr7', (req, res) =>{
+   router_opr.post('/opr7', (req, res) =>{
     let resp = opr7(55)
     res.send(resp)
   })
