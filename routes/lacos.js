@@ -11,28 +11,37 @@ import { laco5 } from "../lacoDeRepeticao/ex5.js";
  //Exercicios de laço
 
  router_lacos.post('/laco1', (req, res) =>{
-    let resp = laco1()
-    res.json(`Contando até 10... ${resp}`)
+    let resposta = {
+      descricao:"Contando até 10...",
+      resultado: laco1()}
+    res.json(resposta)
   })
 
   router_lacos.post('/laco2', (req, res) =>{
-    let resp = laco2()
-    res.send(`Números pares de 2 a 20... ${resp}`)
+    let resposta = {
+      descricao: "Números pares de 2 a 20...",
+      resultado: laco2()}
+    res.send(resposta)
   })
 
   router_lacos.post('/laco3', (req, res) =>{
-    let resp = laco3()
-    res.send(`Números divisiveis por 3 de 1 a 50... ${resp}`)
+    let resposta = {
+      descricao: "Números divisiveis por 3 de 1 a 50...",
+      resultado: laco3()}
+    res.send(resposta)
   })
 
   router_lacos.post('/laco4', (req, res) =>{
-    let resp = laco4()
-    res.send(`${resp}`)
+    let resposta = {
+      resultado: laco4()}
+    res.send(resposta)
   })
 
   router_lacos.post('/laco5', (req, res) =>{
-    let resp = laco5()
-    res.send(`Exibir nomes com o map... ${resp}`)
+    let resposta = {
+      descricao: "Exibir nomes com o map...",
+      resultado: laco5()}
+    res.json(resposta)
   })
 
 export {router_lacos}

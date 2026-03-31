@@ -10,18 +10,21 @@ import { opl3 } from "../operadoresLogicos/ex3.js";
 
   router_opl.post('/opl1', (req, res) =>{
     const {idade, convite} = req.body
-    let resp = opl1(idade, convite)
-    res.json(resp)
+    let resposta = {
+      resultado: opl1(idade, convite)}
+    res.json(resposta)
 })
   router_opl.post('/opl2', (req, res) =>{
     const {nota, freq} = req.body
-    let resp = opl2(nota, freq)
-    res.json(resp)
+    let resposta = {
+      resultado: opl2(nota, freq)}
+    res.json(resposta)
 })
   router_opl.post('/opl3', (req, res) =>{
     const{usuarioLogado} = req.body
-    let resp = opl3(usuarioLogado)
-    res.send(resp)
+    let resposta = {
+      resultado: opl3(usuarioLogado)}
+    res.send(resposta)
 })
 
 export {router_opl}

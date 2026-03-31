@@ -7,20 +7,24 @@ import { if3 } from "../ifElse/ex3.js";
 
  router_ifelse.get('/if1/:idade', (req, res) => {
     const {idade} = req.params
-    let resp = if1(idade)
-    res.send(`${resp}, sua idade é ${idade}`)
+    let resposta = {
+      resultado: if1(idade)
+    }
+    res.send(resposta)
   })
 
   router_ifelse.get('/if2/:n', (req, res) => {
     const {n} = req.params
-    let resp = if2(n)
-    res.send(`${resp}`)
+    let resposta = {
+      resultado: if2(n)}
+    res.send(resposta)
   })
 
   router_ifelse.get('/if3/:pais', (req, res) => {
     const {pais} = req.params
-    let resp = if3(pais)
-    res.send(` ${resp}`)
+    let resposta = {
+      resultado: if3(pais)}
+    res.send(resposta)
   })
 
   export  {router_ifelse}

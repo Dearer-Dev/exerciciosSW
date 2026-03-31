@@ -5,7 +5,9 @@ import { produtos } from "../json/produtos.js";
 
 //Exercicios IfElse
 router_json.get('/json', (req, res) =>{
-    res.json(produtos())
+  let resposta = {
+    resultado: produtos()}
+    res.json(resposta)
   })
 
 
