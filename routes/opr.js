@@ -2,12 +2,12 @@ import express from "express";
 const router_opr = express()
 
 //Operadores Relacionais
-import { opr1 } from "../operadoresRelacionais/ex1.js";
-import { opr2 } from "../operadoresRelacionais/ex2.js";
-import { opr3 } from "../operadoresRelacionais/ex3.js";
-import { opr4 } from "../operadoresRelacionais/ex4.js";
-import { opr5 } from "../operadoresRelacionais/ex5.js";
-import { opr6 } from "../operadoresRelacionais/ex6.js";
+import { opr1 } from "../exercicios/operadoresRelacionais/ex1.js";
+import { opr2 } from "../exercicios/operadoresRelacionais/ex2.js";
+import { opr3 } from "../exercicios/operadoresRelacionais/ex3.js";
+import { opr4 } from "../exercicios/operadoresRelacionais/ex4.js";
+import { opr5 } from "../exercicios/operadoresRelacionais/ex5.js";
+import { opr6 } from "../exercicios/operadoresRelacionais/ex6.js";
 
     //Exerciciosa de operadores relacionais
 

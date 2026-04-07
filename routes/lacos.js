@@ -2,11 +2,11 @@ import express from "express";
 const router_lacos = express()
 
 //Laços de Repetição
-import { laco1 } from "../lacoDeRepeticao/ex1.js";
-import { laco2 } from "../lacoDeRepeticao/ex2.js";
-import { laco3 } from "../lacoDeRepeticao/ex3.js";
-import { laco4 } from "../lacoDeRepeticao/ex4.js";
-import { laco5 } from "../lacoDeRepeticao/ex5.js";
+import { laco1 } from "../exercicios/lacoDeRepeticao/ex1.js";
+import { laco2 } from "../exercicios/lacoDeRepeticao/ex2.js";
+import { laco3 } from "../exercicios/lacoDeRepeticao/ex3.js";
+import { laco4 } from "../exercicios/lacoDeRepeticao/ex4.js";
+import { laco5 } from "../exercicios/lacoDeRepeticao/ex5.js";
 
  //Exercicios de laço
 

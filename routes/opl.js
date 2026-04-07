@@ -2,9 +2,9 @@ import express from "express";
 const router_opl = express()
 
 //Operadores Lógicos
-import { opl1 } from "../operadoresLogicos/ex1.js";
-import { opl2 } from "../operadoresLogicos/ex2.js";
-import { opl3 } from "../operadoresLogicos/ex3.js";
+import { opl1 } from "../exercicios/operadoresLogicos/ex1.js";
+import { opl2 } from "../exercicios/operadoresLogicos/ex2.js";
+import { opl3 } from "../exercicios/operadoresLogicos/ex3.js";
 
   //Exerciciosa de operadores lógicos
 

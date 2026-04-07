@@ -1,9 +1,9 @@
 import express from "express";
 const router_ifelse = express()
 //if Else
-import { if1 } from "../ifElse/ex1.js";
-import { if2 } from "../ifElse/ex2.js";
-import { if3 } from "../ifElse/ex3.js";
+import { if1 } from "../exercicios/ifElse/ex1.js";
+import { if2 } from "../exercicios/ifElse/ex2.js";
+import { if3 } from "../exercicios/ifElse/ex3.js";
 
  router_ifelse.get('/if1/:idade', (req, res) => {
     const {idade} = req.params

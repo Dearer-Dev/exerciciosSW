@@ -1,9 +1,9 @@
 import express from "express";
 const router_variaveis = express()
 
-import {v1} from '../variaveis/ex1.js'
-import {v2} from '../variaveis/ex2.js'
-import {v3} from '../variaveis/ex3.js'
+import {v1} from '../exercicios/variaveis/ex1.js'
+import {v2} from '../exercicios/variaveis/ex2.js'
+import {v3} from '../exercicios/variaveis/ex3.js'
 
 router_variaveis.get('/v1', (req, res) =>{
    const {nome, idade,cidade} = req.query
