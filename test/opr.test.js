@@ -65,4 +65,3 @@ test("Testar do Operador Relacional Diferente (!=) se a senha digitada é difere
     let resposta = { resultado: opr6("andre09") };
     expect(resposta.resultado).toBe("Senha errada, tente novamente.");
 });
-

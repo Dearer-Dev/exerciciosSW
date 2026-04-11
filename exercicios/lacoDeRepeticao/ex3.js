@@ -5,7 +5,7 @@ function laco3() {
 let numeros = []
     
 
-for (let i = 0; i <= 50; i++){
+for (let i = 1; i <= 50; i++){
     if (i % 3 === 0 ){
         numeros.push(i)
         console.log(i)
