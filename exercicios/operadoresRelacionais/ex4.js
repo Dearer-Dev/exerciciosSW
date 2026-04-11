@@ -2,7 +2,7 @@
 
 function opr4(temperatura) {
 
-if(temperatura < 18){
+if(temperatura <= 18){
     return(`Hoje está ${temperatura}° Graus, está frio hoje`)
 }else {
     return(`Hoje está ${temperatura}° Graus, está calor hoje`)
