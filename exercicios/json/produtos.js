@@ -22,4 +22,6 @@ const produtos = [
 return(produtos)
 }
 
+console.log(produtos)
+
 export {produtos}

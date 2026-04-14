@@ -7,19 +7,19 @@ var diaS = agora.getDay()
 
 switch(diaS) {
     case 0:
-        return(`Hoje é Domingo `)
+        return(`Hoje é Ddomingo`)
     case 1:
-        return(`Hoje é Segunda`)
+        return(`Hoje é segunda-feira`)
     case 2:
-        return(`Hoje é Terça`)
+        return(`Hoje é terça-feira`)
     case 3:
-        return(`Hoje é Quarta`)
+        return(`Hoje é quarta-feira`)
     case 4:
-        return(`Hoje é Quinta`)
+        return(`Hoje é quinta-feira`)
     case 5:
-        return(`Hoje é Sexta`)
+        return(`Hoje é sexta-feira`)
     case 6:
-        return(`Hoje é Sábado`)
+        return(`Hoje é sábado`)
     break
     default:
         return(`[ERRO] Dia inválido.`)    
